@@ -37,8 +37,16 @@
   }
 }
 
-
+.weather-tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: auto;
+}
 
 .weather-tile {
   border: 1px solid #282c34;
+  width: 150px;
 }
