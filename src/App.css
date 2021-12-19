@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.weather-tile {
+  border: 1px solid #282c34;
+}
