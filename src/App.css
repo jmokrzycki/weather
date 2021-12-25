@@ -37,6 +37,14 @@
   }
 }
 
+.header{
+  background-color: #CCCCCC;
+  text-align: center;
+  font-size: 30px;
+  height: 200px;
+}
+
+
 .weather-tiles-container {
   display: flex;
   flex-wrap: wrap;
@@ -49,4 +57,12 @@
 .weather-tile {
   border: 1px solid #282c34;
   width: 150px;
+}
+
+.weather-day-details-container {
+  display: flex;
+}
+
+.weather-day-details-tile {
+  border: 1px solid black;
 }

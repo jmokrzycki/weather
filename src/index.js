@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { 
+  BrowserRouter,
+  Routes,
+  Route
+ } from 'react-router-dom';
+import WeatherDayDetails from './weatherDayDetails';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/day-details/:date" element={<WeatherDayDetails />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+  ,
   document.getElementById('root')
 );
 
